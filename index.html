@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Score keeper</title>
+</head>
+
+<body class="has-text-centered">
+    <h1 class=" title is-1 has-text-info mt-3">Score keeper for your game</h1>
+    <h2>Choose the game you want to play :</h2>
+    <div class="select my-4">
+        <select id="chooseInput">
+            <option value="" disabled selected>Choose...</option>
+            <option>Tennis</option>
+            <option>Badminton</option>
+            <option>Tennis de table</option>
+        </select>
+    </div>
+    <div class="card py-4 is-centered mx-6">
+        <div class="is-fullwidth is-flex is-justify-content-center pt-4 card-image">
+            <img style="display: none;" class="img" id="tennis"
+                src="https://cdn-europe1.lanmedia.fr/var/europe1/storage/images/europe1/sport/comment-la-federation-francaise-de-tennis-veut-redonner-envie-de-jouer-4049318/57246024-1-fre-FR/Comment-la-Federation-francaise-de-tennis-veut-redonner-envie-de-jouer.jpg">
+            <img style="display: none;" class="img" id="tennisDeTable"
+                src="https://media.istockphoto.com/photos/service-on-table-tennis-picture-id178826162?k=20&m=178826162&s=612x612&w=0&h=ARUct_POi6EDi00dOLnf3oLIOHNhD-Jvb0mCXLF6l_M=">
+            <img style="display: none;" class="img" id="badminton"
+                src="https://www.anybuddyapp.com/wp-content/uploads/2021/12/badminton-club-compiegnois.jpg">
+        </div>
+        <h2>SCORE : </h2>
+        <p id="score" class="title is-2"><span id="scorePlayerOne">0</span> to <span id="scorePlayerTwo">0</span></p>
+        <p>Use the button below to keep score.</p></br>
+        <p class=" mx-2" id="setNumber"></p>
+        <div class="my-4">
+            <button id="playerOne" class="button is-success">+1 Player One</button>
+            <button id="playerTwo" class="button is-info">+1 Player Two</button>
+            <button class="button is-danger">Reset</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
